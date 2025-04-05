@@ -38,6 +38,6 @@ A cross-platform mobile app for real-time community incident reporting with geol
 - Firebase project with enabled Auth/Firestore
 - Google Maps API key
 
-Installation
-  Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
-  Run $flutter pub get in a system with flutter
+## Setup
+- Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
+- Run $flutter pub get in a system with flutter
