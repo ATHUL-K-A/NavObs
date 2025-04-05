@@ -1,8 +1,6 @@
 # Navobs - Community Reporting System 🌍🚨
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.13.0-blue.svg)](https://flutter.dev)
-[![Firebase](https://img.shields.io/badge/Firebase-9.0.0-orange.svg)](https://firebase.google.com)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A cross-platform mobile app for real-time community incident reporting with geolocation and role-based moderation.
 
@@ -38,4 +36,8 @@ A cross-platform mobile app for real-time community incident reporting with geol
 ### Prerequisites
 - Flutter SDK (>=3.13.0)
 - Firebase project with enabled Auth/Firestore
-- Google Maps API key Add it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
+- Google Maps API key
+
+Installation
+  Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
+  Run $flutter pub get in a system with flutter
