@@ -40,4 +40,4 @@ A cross-platform mobile app for real-time community incident reporting with geol
 
 ## Setup
 - Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
-- Run $flutter pub get in a system with flutter
+- Run $flutter pub get   in a system with flutter
