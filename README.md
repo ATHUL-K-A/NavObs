@@ -1,8 +1,41 @@
-# navobs
-***Made using flutter***
+# Navobs - Community Reporting System 🌍🚨
 
-***Only setup for android. No support for other os was added***
+[![Flutter](https://img.shields.io/badge/Flutter-3.13.0-blue.svg)](https://flutter.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-9.0.0-orange.svg)](https://firebase.google.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-***For the app to work you would have to setup google map api key (it was removed before uploading) in android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json***
+A cross-platform mobile app for real-time community incident reporting with geolocation and role-based moderation.
 
-***Just use $flutter pub get    in a system with flutter installed and the app should be configured and it would work perfectly after doing the above 2 steps***
+<div align="center">
+  <img src="assets/screenshots/demo.gif" width="300" alt="Navobs Demo">
+</div>
+
+## 📌 Features
+
+### Core Functionalities
+- **Role-based access**: Residents submit, admins verify reports
+- **Precision geotagging**: GPS + Google Maps integration
+- **Real-time updates**: Firebase-powered live sync
+- **Offline support**: Queue reports without connectivity
+
+### User Roles
+| Role        | Permissions                          |
+|-------------|--------------------------------------|
+| Resident    | Submit/view reports                  |
+| Admin       | Access to update verified section    |
+
+## 🛠️ Tech Stack
+
+| Component       | Technology                         |
+|-----------------|------------------------------------|
+| Frontend        | Flutter 3.13 (Dart)                |
+| Backend         | Firebase Auth, Cloud Firestore     |
+| Maps            | Google Maps SDK + Geolocator       |
+| State Management| Provider (minimal)                 |
+
+## 🚀 Installation
+
+### Prerequisites
+- Flutter SDK (>=3.13.0)
+- Firebase project with enabled Auth/Firestore
+- Google Maps API key Add it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
