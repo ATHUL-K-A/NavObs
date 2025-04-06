@@ -39,7 +39,8 @@ A cross-platform mobile app for real-time community incident reporting with geol
 - Google Maps API key
 
 ### Cloud firestore rules
-'''
+```
+
 service cloud.firestore {
   match /databases/{database}/documents {
     match /verifiedMessages/{message} {
@@ -54,7 +55,8 @@ service cloud.firestore {
     }
   }
 }
-'''
+
+```
 
 ### Cloud Firestor indexex
 
@@ -63,6 +65,6 @@ Both of it must have the fields - section Ascending, timestamp Descending
 
 ## Setup
 - Add google-services.json provided by the firebase project
-- use '''flutterfire configure''' to setup the project as a firebase project
+- use ```flutterfire configure```to setup the project as a firebase project
 - Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
-- Run '''flutter pub get'''   in a system with flutter
+- Run ```flutter pub get```   in a system with flutter
