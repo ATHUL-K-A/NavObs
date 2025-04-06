@@ -38,6 +38,31 @@ A cross-platform mobile app for real-time community incident reporting with geol
 - Firebase project with enabled Auth/Firestore
 - Google Maps API key
 
+### Cloud firestore rules
+'''
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /verifiedMessages/{message} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null && 
+        request.auth.token.email.matches('admin@email.com');
+    }
+    
+    match /unverifiedMessages/{message} {
+      allow read, create: if request.auth != null;
+      allow update, delete: if request.auth != null
+    }
+  }
+}
+'''
+
+### Cloud Firestor indexex
+
+It must have 2 indexes verifiedMessages,unverifiedMessages.
+Both of it must have the fields - section Ascending, timestamp Descending
+
 ## Setup
+- Add google-services.json provided by the firebase project
+- use '''flutterfire configure''' to setup the project as a firebase project
 - Add google map key to it to - android:value of android\app\src\main\AndroidManifest.xml and "current_key" present in android\app\google-services.json
-- Run $flutter pub get   in a system with flutter
+- Run '''flutter pub get'''   in a system with flutter
