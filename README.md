@@ -58,7 +58,7 @@ service cloud.firestore {
 
 ```
 
-### Cloud Firestor indexex
+### Cloud Firestore indexex
 
 It must have 2 indexes verifiedMessages,unverifiedMessages.
 Both of it must have the fields - section Ascending, timestamp Descending
